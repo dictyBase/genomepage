@@ -34,7 +34,7 @@
     "element-remove": "^1.0.4",
     "font-awesome": "^4.7.0",
     "jwt-decode": "^2.2.0",
-    "react": "^16.10.2",
+    "react": "^16.11.0",
     "react-dom": "^16.10.2",
     "react-fontawesome": "^1.6.1",
     "react-ga": "^2.6.0",
