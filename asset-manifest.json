@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.js": "/gene/build/main.529bc760.js",
+    "runtime-main.js": "/gene/build/bundle.e4600816.js",
+    "static/css/2.46891d18.chunk.css": "/gene/static/css/2.46891d18.chunk.css",
+    "build/2.91d2d690.js": "/gene/build/2.91d2d690.js",
+    "build/2.91d2d690.js.LICENSE.txt": "/gene/build/2.91d2d690.js.LICENSE.txt",
+    "index.html": "/gene/index.html",
+    "precache-manifest.d03fb33d22ed069baa97b33946f75aea.js": "/gene/precache-manifest.d03fb33d22ed069baa97b33946f75aea.js",
+    "service-worker.js": "/gene/service-worker.js",
+    "static/css/2.46891d18.chunk.css.map": "/gene/static/css/2.46891d18.chunk.css.map",
+    "static/media/academicons.min.css": "/gene/static/media/academicons.ea3755c3.eot",
+    "static/media/font-awesome.min.css": "/gene/static/media/fontawesome-webfont.fee66e71.woff",
+    "static/media/logo.png": "/gene/static/media/logo.4eeedc37.png",
+    "static/media/index.css": "/gene/static/media/roboto-latin-900italic.ebf6d164.woff2"
+  },
+  "entrypoints": [
+    "build/bundle.e4600816.js",
+    "static/css/2.46891d18.chunk.css",
+    "build/2.91d2d690.js",
+    "build/main.529bc760.js"
+  ]
+}
