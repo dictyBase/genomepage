@@ -2,15 +2,15 @@
   "files": {
     "main.js": "/gene/build/main.11d1ae6a.js",
     "runtime-main.js": "/gene/build/bundle.e4600816.js",
-    "build/2.b9106cd9.js": "/gene/build/2.b9106cd9.js",
-    "build/2.b9106cd9.js.LICENSE.txt": "/gene/build/2.b9106cd9.js.LICENSE.txt",
+    "build/2.0e972d69.js": "/gene/build/2.0e972d69.js",
+    "build/2.0e972d69.js.LICENSE.txt": "/gene/build/2.0e972d69.js.LICENSE.txt",
     "index.html": "/gene/index.html",
-    "precache-manifest.19693c0468fd409681ac16c74653de68.js": "/gene/precache-manifest.19693c0468fd409681ac16c74653de68.js",
+    "precache-manifest.05344c4f465b270be6d72e195ce0f9dd.js": "/gene/precache-manifest.05344c4f465b270be6d72e195ce0f9dd.js",
     "service-worker.js": "/gene/service-worker.js"
   },
   "entrypoints": [
     "build/bundle.e4600816.js",
-    "build/2.b9106cd9.js",
+    "build/2.0e972d69.js",
     "build/main.11d1ae6a.js"
   ]
 }
