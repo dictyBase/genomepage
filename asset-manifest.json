@@ -1,13 +1,13 @@
 {
   "files": {
-    "build/0.3d771f75.js": "/gene/build/0.3d771f75.js",
+    "build/0.2c681d20.js": "/gene/build/0.2c681d20.js",
     "main.js": "/gene/build/main.a67852de.js",
     "runtime-main.js": "/gene/build/bundle.105de5e2.js",
     "index.html": "/gene/index.html"
   },
   "entrypoints": [
     "build/bundle.105de5e2.js",
-    "build/0.3d771f75.js",
+    "build/0.2c681d20.js",
     "build/main.a67852de.js"
   ]
 }
