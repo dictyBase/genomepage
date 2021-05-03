@@ -2,12 +2,12 @@
   "files": {
     "main.js": "/gene/build/main.2f715c9f.js",
     "runtime-main.js": "/gene/build/bundle.105de5e2.js",
-    "vendors~main.js": "/gene/build/vendors~main.45234656.js",
+    "vendors~main.js": "/gene/build/vendors~main.f6c668f0.js",
     "index.html": "/gene/index.html"
   },
   "entrypoints": [
     "build/bundle.105de5e2.js",
-    "build/vendors~main.45234656.js",
+    "build/vendors~main.f6c668f0.js",
     "build/main.2f715c9f.js"
   ]
 }
