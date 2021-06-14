@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.js": "/gene/build/main.e5399608.js",
+    "main.js": "/gene/build/main.a01f9c77.js",
     "runtime-main.js": "/gene/build/bundle.105de5e2.js",
     "vendors~main.js": "/gene/build/vendors~main.891a9fd7.js",
     "index.html": "/gene/index.html"
@@ -8,6 +8,6 @@
   "entrypoints": [
     "build/bundle.105de5e2.js",
     "build/vendors~main.891a9fd7.js",
-    "build/main.e5399608.js"
+    "build/main.a01f9c77.js"
   ]
 }
