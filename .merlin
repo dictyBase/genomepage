@@ -11,4 +11,6 @@ S /home/ayaanqui/work/dictybase/genomepage/node_modules/rescript-material-ui/lib
 B /home/ayaanqui/work/dictybase/genomepage/node_modules/rescript-material-ui/lib/ocaml
 S /home/ayaanqui/work/dictybase/genomepage/node_modules/rescript-material-ui-lab/lib/ocaml
 B /home/ayaanqui/work/dictybase/genomepage/node_modules/rescript-material-ui-lab/lib/ocaml
+S src/components
+B lib/bs/src/components
 ####BSB GENERATED: NO EDIT}
