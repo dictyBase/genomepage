@@ -1,11 +1,10 @@
-import { Box, Skeleton } from "@mui/material"
+import { Box } from "@mui/material"
+import { make as SkeletonWithCounter } from "components/SkeletonWithCount.bs"
 
 const PublicationsLoader = () => {
   return (
     <Box mt="10px" data-testid="skeleton-loader">
-      {[...Array(10)].map((i) => (
-        <Skeleton animation="wave" key={i} />
-      ))}
+      <SkeletonWithCounter count={10} />
     </Box>
   )
 }
