@@ -10,7 +10,7 @@ const getTabValue = (pathname: string) => {
   const subroute = pathname.split("/").splice(-1).join()
 
   switch (subroute) {
-    case "references":
+    case "publications":
       return 3
     case "phenotypes":
       return 2
@@ -63,9 +63,9 @@ const Layout = ({ children, gene, title, description }: Props) => {
               to={`/${gene}/phenotypes`}
             />
             <Tab
-              label="References"
+              label="Publications"
               component={Link}
-              to={`/${gene}/references`}
+              to={`/${gene}/publications`}
             />
           </Tabs>
         </AppBar>

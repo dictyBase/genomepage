@@ -2,7 +2,7 @@ import { ApolloError } from "@apollo/client"
 import { render, screen } from "@testing-library/react"
 import { useGeneQuery } from "dicty-graphql-schema"
 import mockGene from "mocks/mockGene"
-import ReferencesContainer from "features/References/ReferencesContainer"
+import PublicationsContainer from "features/Publications/PublicationsContainer"
 
 const gene = "sadA"
 const pathname = `gene/${gene}/references`
@@ -20,7 +20,7 @@ jest.mock("dicty-graphql-schema", () => {
   return { useGeneQuery }
 })
 
-describe("features/References/ReferencesContainer", () => {
+describe("features/Publications/PublicationsContainer", () => {
   beforeEach(() => jest.clearAllMocks())
 
   it("should render loading", () => {
@@ -29,7 +29,7 @@ describe("features/References/ReferencesContainer", () => {
       error: undefined,
       data: undefined,
     })
-    render(<ReferencesContainer />)
+    render(<PublicationsContainer />)
 
     // Renders skeleton loading
     expect(screen.getByTestId("skeleton-loader")).toBeInTheDocument()
@@ -41,7 +41,7 @@ describe("features/References/ReferencesContainer", () => {
       error: new ApolloError({}),
       data: undefined,
     })
-    render(<ReferencesContainer />)
+    render(<PublicationsContainer />)
   })
 
   it("should render data", () => {
@@ -50,7 +50,7 @@ describe("features/References/ReferencesContainer", () => {
       error: undefined,
       data: mockGene,
     })
-    render(<ReferencesContainer />)
+    render(<PublicationsContainer />)
 
     // Renders skeleton loading
     expect(screen.getByText("Reference")).toBeInTheDocument()

@@ -16,7 +16,7 @@ interface Props {
   data: GeneQuery
 }
 
-const ReferencesDataTable = ({ data }: Props) => {
+const PublicationsDataTable = ({ data }: Props) => {
   const classes = useStyles()
 
   if (!data.allPublications) return <OtherError />
@@ -42,4 +42,4 @@ const ReferencesDataTable = ({ data }: Props) => {
   )
 }
 
-export default ReferencesDataTable
+export default PublicationsDataTable

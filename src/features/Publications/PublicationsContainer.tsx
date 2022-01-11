@@ -3,10 +3,10 @@ import Typography from "@material-ui/core/Typography"
 import GraphQLErrorPage from "components/errors/GraphQLErrorPage"
 import Layout from "components/layout/Layout"
 import { useGeneQuery } from "dicty-graphql-schema"
-import ReferencesLoader from "./ReferencesLoader"
-import ReferencesDataTable from "./ReferencesDataTable"
+import PublicationsLoader from "./PublicationsLoader"
+import PublicationsDataTable from "./PublicationsDataTable"
 
-const ReferencesContainer = () => {
+const PublicationsContainer = () => {
   const gene = useParams().gene as string
   const { loading, error, data } = useGeneQuery({
     variables: {
@@ -20,12 +20,12 @@ const ReferencesContainer = () => {
       title={`References for ${gene}`}
       description={`Gene references for ${gene}`}>
       <Typography component="div">
-        {loading && <ReferencesLoader />}
+        {loading && <PublicationsLoader />}
         {error && <GraphQLErrorPage error={error} />}
-        {data && <ReferencesDataTable data={data} />}
+        {data && <PublicationsDataTable data={data} />}
       </Typography>
     </Layout>
   )
 }
 
-export default ReferencesContainer
+export default PublicationsContainer
