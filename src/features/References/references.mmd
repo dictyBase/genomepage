@@ -1,0 +1,7 @@
+graph TD
+    A{Routes} --> |:gene/references| B[ReferencesPage]
+    B --> |fetch gene data| C[ReferencesContainer]
+    C --> |loading| D[ReferencesLoader]
+    C --> |error| E[GraphQLErrorPage]
+    C --> |data| F[ReferencesDataTable]
+    F --> |render rows| G[PublicationRow]
