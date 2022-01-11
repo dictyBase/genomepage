@@ -1,5 +1,3 @@
-import OtherError from "components/errors/OtherError"
-import { GeneQuery } from "dicty-graphql-schema"
 import {
   Paper,
   Table,
@@ -13,14 +11,29 @@ import useStyles from "common/styles/dataTableStyles"
 import PublicationRow from "./PublicationRow"
 
 interface Props {
-  data: GeneQuery
+  data: {
+    __typename?: "PublicationWithGene"
+    id: string
+    doi?: string | null | undefined
+    title: string
+    journal: string
+    pub_date?: any | null | undefined
+    volume?: string | null | undefined
+    pages?: string | null | undefined
+    pub_type: string
+    source: string
+    issue?: string | null | undefined
+    related_genes: Array<{ __typename?: "Gene"; id: string; name: string }>
+    authors: Array<{
+      __typename?: "Author"
+      last_name: string
+      rank?: string | null | undefined
+    }>
+  }[]
 }
 
 const PublicationsDataTable = ({ data }: Props) => {
   const classes = useStyles()
-
-  if (!data.allPublications) return <OtherError />
-  const publications = data.allPublications
 
   return (
     <TableContainer component={Paper} className={classes.root}>
@@ -33,7 +46,7 @@ const PublicationsDataTable = ({ data }: Props) => {
         </TableHead>
 
         <TableBody>
-          {publications.map((publication, i) => (
+          {data.map((publication, i) => (
             <PublicationRow publication={publication} key={i} />
           ))}
         </TableBody>

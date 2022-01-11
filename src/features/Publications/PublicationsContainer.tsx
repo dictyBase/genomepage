@@ -22,7 +22,9 @@ const PublicationsContainer = () => {
       <Typography component="div">
         {loading && <PublicationsLoader />}
         {error && <GraphQLErrorPage error={error} />}
-        {data && <PublicationsDataTable data={data} />}
+        {data?.allPublications && (
+          <PublicationsDataTable data={data.allPublications} />
+        )}
       </Typography>
     </Layout>
   )
