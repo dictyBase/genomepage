@@ -1,7 +1,8 @@
 @react.component
 let make = () => {
   open Mui
-  <Box>
+  <div role="loading">
+    <Box>
     <SkeletonWithCount count=10 />
     <br />
     <br />
@@ -13,4 +14,5 @@ let make = () => {
     <br />
     <SkeletonWithCount count=5 />
   </Box>
+  </div>
 }

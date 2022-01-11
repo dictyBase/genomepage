@@ -6,28 +6,34 @@ import * as SkeletonWithCount$DictyGenomepage from "./SkeletonWithCount.bs.js"
 
 function Loader(Props) {
   return React.createElement(
-    Core.Box,
+    "div",
     {
-      children: null,
+      role: "loading",
     },
-    React.createElement(SkeletonWithCount$DictyGenomepage.make, {
-      count: 10,
-    }),
-    React.createElement("br", undefined),
-    React.createElement("br", undefined),
-    React.createElement(SkeletonWithCount$DictyGenomepage.make, {
-      count: 10,
-    }),
-    React.createElement("br", undefined),
-    React.createElement("br", undefined),
-    React.createElement(SkeletonWithCount$DictyGenomepage.make, {
-      count: 10,
-    }),
-    React.createElement("br", undefined),
-    React.createElement("br", undefined),
-    React.createElement(SkeletonWithCount$DictyGenomepage.make, {
-      count: 5,
-    }),
+    React.createElement(
+      Core.Box,
+      {
+        children: null,
+      },
+      React.createElement(SkeletonWithCount$DictyGenomepage.make, {
+        count: 10,
+      }),
+      React.createElement("br", undefined),
+      React.createElement("br", undefined),
+      React.createElement(SkeletonWithCount$DictyGenomepage.make, {
+        count: 10,
+      }),
+      React.createElement("br", undefined),
+      React.createElement("br", undefined),
+      React.createElement(SkeletonWithCount$DictyGenomepage.make, {
+        count: 10,
+      }),
+      React.createElement("br", undefined),
+      React.createElement("br", undefined),
+      React.createElement(SkeletonWithCount$DictyGenomepage.make, {
+        count: 5,
+      }),
+    ),
   )
 }
 
