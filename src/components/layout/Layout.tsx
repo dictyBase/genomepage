@@ -24,8 +24,8 @@ const getTabValue = (pathname: string) => {
 type Props = {
   children: React.ReactNode
   gene: string
-  title: string
-  description: string
+  title?: string
+  description?: string
 }
 
 const Layout = ({ children, gene, title, description }: Props) => {
@@ -40,8 +40,11 @@ const Layout = ({ children, gene, title, description }: Props) => {
     <Grid container justifyContent="center">
       <Grid item xs={12}>
         <Helmet>
-          <title>{title} - dictyBase</title>
-          <meta name="description" content={`${description} at dictyBase`} />
+          <title>{title ? title : gene} - dictyBase</title>
+          <meta
+            name="description"
+            content={`${description ? description : gene} at dictyBase`}
+          />
         </Helmet>
         <Box pt="20px" pb="20px">
           <Typography textAlign="center" variant="h1" fontSize="24px">
