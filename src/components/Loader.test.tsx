@@ -1,6 +1,5 @@
-import React from "react"
 import { render, screen } from "@testing-library/react"
-import Loader from "components/Loader"
+import { make as Loader } from "components/Loader.bs"
 
 describe("components/Loader", () => {
   it("should render Loader", () => {

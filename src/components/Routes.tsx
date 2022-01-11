@@ -1,7 +1,7 @@
 import React, { lazy, Suspense } from "react"
 import { Route, Routes as ReactRoutes, Navigate } from "react-router-dom"
 import useGoogleAnalytics from "common/hooks/useGoogleAnalytics"
-import Loader from "components/Loader"
+import { make as Loader } from "components/Loader.bs"
 
 /**
  * Lazy loading components for increased performance.
