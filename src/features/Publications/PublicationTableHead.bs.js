@@ -3,23 +3,17 @@
 import * as React from "react"
 import * as Core from "@material-ui/core"
 
-function make(head, headRow) {
-  return React.createElement(Core.TableHead, {
-    children: React.createElement(
-      Core.TableRow,
-      {
-        children: null,
-        className: headRow,
-      },
-      React.createElement(Core.TableCell, {
-        children: "Reference",
-      }),
-      React.createElement(Core.TableCell, {
-        children: "Other Genes Mentioned",
-      }),
-    ),
-    className: head,
-  })
+function make(param) {
+  return React.createElement(
+    React.Fragment,
+    undefined,
+    React.createElement(Core.TableCell, {
+      children: "Reference",
+    }),
+    React.createElement(Core.TableCell, {
+      children: "Other Genes Mentioned",
+    }),
+  )
 }
 
 export { make }

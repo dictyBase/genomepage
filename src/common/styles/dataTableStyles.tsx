@@ -14,6 +14,16 @@ const useStyles = makeStyles({
       fontWeight: "bold",
     },
   },
+  oddColorCell: {
+    "&:nth-child(odd)": {
+      backgroundColor: "#f2f2f2",
+    },
+  },
+  evenColorCell: {
+    "&:nth-child(even)": {
+      backgroundColor: "#f2f2f2",
+    },
+  },
 })
 
 export default useStyles

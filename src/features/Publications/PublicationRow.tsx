@@ -1,4 +1,5 @@
 import { TableCell, TableRow } from "@material-ui/core"
+import useStyles from "common/styles/dataTableStyles"
 import PublicationCellGenes from "./PublicationCellGenes"
 import PublicationCellReferences from "./PublicationCellReference"
 
@@ -25,8 +26,10 @@ interface PublicationRowProps {
 }
 
 const PublicationRow = ({ publication }: PublicationRowProps) => {
+  const classes = useStyles()
+
   return (
-    <TableRow>
+    <TableRow className={classes.evenColorCell}>
       <TableCell>
         <PublicationCellReferences
           title={publication.title}

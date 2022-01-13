@@ -1,4 +1,11 @@
-import { Paper, Table, TableBody, TableContainer } from "@material-ui/core"
+import {
+  Paper,
+  Table,
+  TableBody,
+  TableContainer,
+  TableHead,
+  TableRow,
+} from "@material-ui/core"
 import useStyles from "common/styles/dataTableStyles"
 import PublicationRow from "features/Publications/PublicationRow"
 import { make as PublicationTableHead } from "features/Publications/PublicationTableHead.bs"
@@ -30,8 +37,12 @@ const PublicationsDataTable = ({ data }: Props) => {
 
   return (
     <TableContainer component={Paper} className={classes.root}>
-      <Table aria-label="phenotypes-table">
-        <PublicationTableHead head={classes.head} headRow={classes.headRow} />
+      <Table aria-label="publications-table">
+        <TableHead className={classes.head}>
+          <TableRow className={classes.headRow}>
+            <PublicationTableHead />
+          </TableRow>
+        </TableHead>
 
         <TableBody>
           {data.map((publication, i) => (
