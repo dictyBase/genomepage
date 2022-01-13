@@ -1,14 +1,7 @@
-import {
-  Paper,
-  Table,
-  TableBody,
-  TableCell,
-  TableContainer,
-  TableHead,
-  TableRow,
-} from "@material-ui/core"
+import { Paper, Table, TableBody, TableContainer } from "@material-ui/core"
 import useStyles from "common/styles/dataTableStyles"
-import PublicationRow from "./PublicationRow"
+import PublicationRow from "features/Publications/PublicationRow"
+import { make as PublicationTableHead } from "features/Publications/PublicationTableHead.bs"
 
 interface Props {
   data: {
@@ -38,12 +31,7 @@ const PublicationsDataTable = ({ data }: Props) => {
   return (
     <TableContainer component={Paper} className={classes.root}>
       <Table aria-label="phenotypes-table">
-        <TableHead className={classes.head}>
-          <TableRow className={classes.headRow}>
-            <TableCell>Reference</TableCell>
-            <TableCell>Other Genes Mentioned</TableCell>
-          </TableRow>
-        </TableHead>
+        <PublicationTableHead head={classes.head} headRow={classes.headRow} />
 
         <TableBody>
           {data.map((publication, i) => (

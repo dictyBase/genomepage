@@ -1,7 +1,7 @@
 graph TD
-    A{Routes} --> |:gene/references| B[ReferencesPage]
-    B --> |fetch gene data| C[ReferencesContainer]
-    C --> |loading| D[ReferencesLoader]
+    A{Routes} --> |:gene/publications| B[PublicationsPage]
+    B --> |fetch gene data| C[PublicationsContainer]
+    C --> |loading| D[PublicationsLoader]
     C --> |error| E[GraphQLErrorPage]
-    C --> |data| F[ReferencesDataTable]
+    C --> |data| F[PublicationsDataTable]
     F --> |render rows| G[PublicationRow]
