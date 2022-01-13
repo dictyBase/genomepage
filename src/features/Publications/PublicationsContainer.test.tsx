@@ -32,7 +32,7 @@ describe("features/Publications/PublicationsContainer", () => {
     render(<PublicationsContainer />)
 
     // Renders skeleton loading
-    expect(screen.getByTestId("skeleton-loader")).toBeInTheDocument()
+    expect(screen.getByRole("loader")).toBeInTheDocument()
   })
 
   it("should render apollo error", () => {
