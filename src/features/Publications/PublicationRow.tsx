@@ -1,4 +1,5 @@
-import { Chip, TableCell, TableRow } from "@material-ui/core"
+import { TableCell, TableRow } from "@material-ui/core"
+import PublicationCellGenes from "./PublicationCellGenes"
 import PublicationCellReferences from "./PublicationCellReference"
 
 interface PublicationRowProps {
@@ -35,14 +36,7 @@ const PublicationRow = ({ publication }: PublicationRowProps) => {
       </TableCell>
 
       <TableCell>
-        {publication.related_genes.map((gene, i) => (
-          <Chip
-            label={gene.name}
-            size="small"
-            style={{ margin: "0px 5px 5px 0px" }}
-            variant="outlined"
-          />
-        ))}
+        <PublicationCellGenes genes={publication.related_genes} />
       </TableCell>
     </TableRow>
   )
