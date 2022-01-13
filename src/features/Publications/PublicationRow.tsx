@@ -1,5 +1,5 @@
 import { Chip, TableCell, TableRow } from "@material-ui/core"
-import { commaSeparateWithAnd } from "common/utils/strings"
+import PublicationCellReferences from "./PublicationCellReference"
 
 interface PublicationRowProps {
   publication: {
@@ -27,13 +27,11 @@ const PublicationRow = ({ publication }: PublicationRowProps) => {
   return (
     <TableRow>
       <TableCell>
-        <b>
-          {commaSeparateWithAnd(publication.authors.map((a) => a.last_name))}
-        </b>
-        &nbsp; '{publication.title}' &nbsp;
-        <i>{publication.journal}</i>
-        &nbsp;
-        {publication.pages}
+        <PublicationCellReferences
+          title={publication.title}
+          journal={publication.journal}
+          authors={publication.authors}
+        />
       </TableCell>
 
       <TableCell>
