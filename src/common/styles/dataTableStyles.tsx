@@ -6,6 +6,14 @@ const useStyles = makeStyles({
     overflowX: "auto",
     borderRadius: 0,
   },
+  dataTable: {
+    "& thead": {
+      backgroundColor: "#e6f2ff",
+      "& th": {
+        fontWeight: "bold",
+      },
+    },
+  },
   head: {
     backgroundColor: "#e6f2ff",
   },
