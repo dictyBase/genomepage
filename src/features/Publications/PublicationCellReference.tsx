@@ -3,9 +3,8 @@ import { commaSeparateWithAnd } from "common/utils/strings"
 interface PublicationCellReferencesProps {
   title: string
   journal: string
-  pages?: string
+  pages?: string | null
   authors: {
-    __typename?: "Author"
     last_name: string
     rank?: string | null
   }[]
