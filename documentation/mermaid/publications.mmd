@@ -1,0 +1,9 @@
+graph TD
+    A{Routes} --> |:gene/publications| B[PublicationsContainer]
+    B --> |loading ReScript| C[PublicationsLoader]
+    B --> |error| D[GraphQLErrorPage]
+    B --> |data| E[PublicationsDataTable]
+    E --> |render table head ReScript| F[PublicationTableHead]
+    E --> |render rows| G[PublicationRow]
+    G --> |render reference column| H[PublicationCellReferences]
+    G --> |render other genes column| I[PublicationCellGenes]
