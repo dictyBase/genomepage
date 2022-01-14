@@ -1,7 +1,8 @@
 import { Chip } from "@material-ui/core"
+import { AllPublicationReference } from "types"
 
 interface PublicationCellGenesProps {
-  genes: { __typename?: "Gene"; id: string; name: string }[]
+  genes: AllPublicationReference["related_genes"]
 }
 
 const PublicationCellGenes = ({ genes }: PublicationCellGenesProps) => {
