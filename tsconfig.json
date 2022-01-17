@@ -8,7 +8,6 @@
     "isolatedModules": true,
     "jsx": "react-jsx",
     "lib": ["dom", "dom.iterable", "esnext"],
-    "module": "esnext",
     "moduleResolution": "node",
     "outDir": "build",
     "noUnusedLocals": false,
@@ -17,6 +16,7 @@
     "skipLibCheck": true,
     "strict": true,
     "target": "es5",
+    "module": "esnext",
     "noEmit": true,
     "downlevelIteration": true,
     "noFallthroughCasesInSwitch": true
