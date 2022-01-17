@@ -28,6 +28,8 @@ jobs:
         run: mv src/common/utils/clientConfig.sample.ts src/common/utils/clientConfig.ts
       - name: install
         run: yarn install
+      - name: rescript
+        run: yarn re:build
       - name: unit tests
         run: yarn test-coverage
         env:

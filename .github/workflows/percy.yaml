@@ -22,6 +22,7 @@ jobs:
         run: |
           mv src/common/utils/clientConfig.sample.ts src/common/utils/clientConfig.ts
           yarn install
+          yarn re:build
       - name: run cypress and percy tests
         run: yarn cypress:ci
         env:
