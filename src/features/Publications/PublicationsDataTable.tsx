@@ -1,8 +1,8 @@
-import { Paper, Table, TableBody, TableContainer } from "@material-ui/core"
+import { Paper, Table, TableContainer } from "@material-ui/core"
 import useStyles from "common/styles/dataTableStyles"
-import PublicationRow from "features/Publications/PublicationRow"
 import { make as PublicationTableHead } from "features/Publications/PublicationTableHead.bs"
 import { AllPublicationReference } from "types"
+import PublicationTableBody from "./PublicationTableBody"
 
 interface Props {
   data: AllPublicationReference[]
@@ -16,11 +16,7 @@ const PublicationsDataTable = ({ data }: Props) => {
       <Table aria-label="publications-table" className={classes.dataTable}>
         <PublicationTableHead />
 
-        <TableBody>
-          {data.map((publication, i) => (
-            <PublicationRow publication={publication} key={i} />
-          ))}
-        </TableBody>
+        <PublicationTableBody publications={data} />
       </Table>
     </TableContainer>
   )
