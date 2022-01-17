@@ -9,7 +9,7 @@ function Loader(Props) {
   return React.createElement(
     "div",
     {
-      role: "loading",
+      role: "loader",
     },
     React.createElement(
       Core.Box,

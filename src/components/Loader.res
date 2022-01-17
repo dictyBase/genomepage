@@ -1,7 +1,7 @@
 @react.component
 let make = () => {
   open Mui
-  <div role="loading">
+  <div role="loader">
     <Box>
     <SkeletonWithCount count=10 />
     <br />
