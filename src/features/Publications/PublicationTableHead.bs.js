@@ -4,7 +4,7 @@
 var React = require("react")
 var Core = require("@material-ui/core")
 
-function make(param) {
+function PublicationTableHead(Props) {
   return React.createElement(Core.TableHead, {
     children: React.createElement(
       Core.TableRow,
@@ -20,6 +20,8 @@ function make(param) {
     ),
   })
 }
+
+var make = PublicationTableHead
 
 exports.make = make
 /* react Not a pure module */

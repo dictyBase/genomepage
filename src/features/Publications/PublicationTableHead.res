@@ -1,3 +1,4 @@
+@react.component
 let make = () => {
   open Mui
   <TableHead>

@@ -5,7 +5,7 @@ var React = require("react")
 var Core = require("@material-ui/core")
 var SkeletonWithCount$DictyGenomepage = require("../../components/SkeletonWithCount.bs.js")
 
-function make(param) {
+function PublicationLoader(Props) {
   return React.createElement(
     "div",
     {
@@ -19,6 +19,8 @@ function make(param) {
     }),
   )
 }
+
+var make = PublicationLoader
 
 exports.make = make
 /* react Not a pure module */
