@@ -3,7 +3,8 @@ import { useRouter } from "next/router"
 import Link from "next/link"
 import Tabs from "@material-ui/core/Tabs"
 import Tab from "@material-ui/core/Tab"
-import { Typography, Grid, AppBar, Box } from "@mui/material"
+import { Typography } from "@mui/material"
+import { Grid, AppBar, Box } from "@material-ui/core/"
 import Head from "next/head"
 
 const getTabValue = (pathname: string) => {

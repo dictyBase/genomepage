@@ -1,4 +1,5 @@
-import { Box, Skeleton } from "@mui/material"
+import { Skeleton } from "@mui/material"
+import Box from "@material-ui/core/Box"
 
 /**
  * Loading screen for Summary page

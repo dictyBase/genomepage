@@ -1,5 +1,6 @@
 import { createTheme } from "@material-ui/core/styles"
-import { Box, Skeleton } from "@mui/material"
+import { Skeleton } from "@mui/material"
+import Box from "@material-ui/core/Box"
 
 /**
  * Loading screen for Protein Information page
