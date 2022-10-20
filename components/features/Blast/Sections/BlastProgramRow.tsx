@@ -1,9 +1,8 @@
 import useStyles from "styles/geneOrIDSection"
-import { Typography, Card, Box, Grid } from "@material-ui/core"
+import { Typography, Card, Box, Grid, Select } from "@material-ui/core"
 import { MutableRefObject, useEffect, useState } from "react"
 import { Observable } from "rxjs"
 import { programOptionsMock } from "../mocks/relatonalMockData"
-import Select, { SelectChangeEvent } from "@mui/material/Select"
 
 interface BlastProgramRow {
   programElement: MutableRefObject<HTMLInputElement>
@@ -48,7 +47,7 @@ const BlastProgramRow = ({
               defaultValue={"Please Select a Program"}
               inputProps={{ style: { fontSize: 12, minWidth: 400 } }}
               value={option}
-              onChange={(e: SelectChangeEvent) => {
+              onChange={(e) => {
                 setOption(e.target.value as string)
               }}
               ref={programElement}>

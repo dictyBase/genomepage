@@ -1,7 +1,6 @@
-import react, { MutableRefObject, useState, useEffect, useRef } from "react"
+import { MutableRefObject, useState, useEffect } from "react"
 import useStyles from "styles/geneOrIDSection"
-import { Typography, Card, Box, Grid } from "@material-ui/core"
-import Select, { SelectChangeEvent } from "@mui/material/Select"
+import { Typography, Card, Box, Grid, Select } from "@material-ui/core"
 import { Observable } from "rxjs"
 import { programToDatabaseMock } from "../mocks/relatonalMockData"
 
@@ -91,7 +90,7 @@ const BlastDatabaseRow = ({
               native
               id="organism-select-id"
               defaultValue="Dictyostelium discoideum"
-              onChange={(e: SelectChangeEvent) => {
+              onChange={(e) => {
                 setSelectOrganismValue(e.target.value as string)
               }}
               inputProps={{ style: { fontSize: 12, minWidth: 400 } }}
