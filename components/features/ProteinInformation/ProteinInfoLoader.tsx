@@ -1,6 +1,6 @@
-import { createTheme } from "@material-ui/core/styles"
-import { Skeleton } from "@mui/material"
 import Box from "@material-ui/core/Box"
+import Skeleton from "react-loading-skeleton"
+import "react-loading-skeleton/dist/skeleton.css"
 
 /**
  * Loading screen for Protein Information page
@@ -8,19 +8,13 @@ import Box from "@material-ui/core/Box"
 const ProteinInfoLoader = () => (
   <Box data-testid="skeleton-loader">
     <Box mt="10px">
-      {[...Array(5)].map((item, key) => (
-        <Skeleton key={key} animation="wave" />
-      ))}
+      <Skeleton count={5} />
       <br />
       <br />
-      {[...Array(5)].map((item, key) => (
-        <Skeleton key={key} animation="wave" />
-      ))}
+      <Skeleton count={5} />
       <br />
       <br />
-      {[...Array(5)].map((item, key) => (
-        <Skeleton key={key} animation="wave" />
-      ))}
+      <Skeleton count={5} />
     </Box>
   </Box>
 )

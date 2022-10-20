@@ -2,7 +2,8 @@ import AppBar from "@material-ui/core/AppBar"
 import Tabs from "@material-ui/core/Tabs"
 import Tab from "@material-ui/core/Tab"
 import { createTheme, MuiThemeProvider } from "@material-ui/core/styles"
-import { Skeleton } from "@mui/material"
+import Skeleton from "react-loading-skeleton"
+import "react-loading-skeleton/dist/skeleton.css"
 import Box from "@material-ui/core/Box"
 
 const skeletonTheme = createTheme({
@@ -43,19 +44,13 @@ const WikiLoader = () => (
       </AppBar>
     </MuiThemeProvider>
     <Box mt="10px">
-      {[...Array(5)].map((item, key) => (
-        <Skeleton key={key} animation="wave" />
-      ))}
+      <Skeleton count={5} />
       <br />
       <br />
-      {[...Array(5)].map((item, key) => (
-        <Skeleton key={key} animation="wave" />
-      ))}
+      <Skeleton count={5} />
       <br />
       <br />
-      {[...Array(5)].map((item, key) => (
-        <Skeleton key={key} animation="wave" />
-      ))}
+      <Skeleton count={5} />
     </Box>
   </Box>
 )
