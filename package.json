@@ -57,7 +57,6 @@
     "react-dom": "17.0.0",
     "react-fontawesome": "^1.7.1",
     "react-ga": "^3.3.0",
-    "react-loading-skeleton": "^3.1.0",
     "react-markdown": "^8.0.3",
     "rxjs": "6.6",
     "string.prototype.includes": "^2.0.0",
