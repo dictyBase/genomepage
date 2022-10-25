@@ -1,13 +1,14 @@
 import Box from "@material-ui/core/Box"
-import Skeleton from "react-loading-skeleton"
-import "react-loading-skeleton/dist/skeleton.css"
+import Skeleton from "@material-ui/lab/Skeleton"
 
 /**
  * Loading screen for Summary page
  */
 const SummaryLoader = () => (
   <Box mt={"10px"} data-testid="skeleton-loader">
-    <Skeleton count={10} />
+    {[...Array(10)].map((item, key) => (
+      <Skeleton key={key} animation="wave" />
+    ))}
   </Box>
 )
 

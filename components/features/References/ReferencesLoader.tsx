@@ -1,11 +1,12 @@
 import Box from "@material-ui/core/Box"
-import Skeleton from "react-loading-skeleton"
-import "react-loading-skeleton/dist/skeleton.css"
+import Skeleton from "@material-ui/lab/Skeleton"
 
 const ReferencesLoader = () => {
   return (
     <Box mt="10px" data-testid="skeleton-loader">
-      <Skeleton count={10} />
+      {[...Array(10)].map((item, key) => (
+        <Skeleton animation="wave" key={key} />
+      ))}
     </Box>
   )
 }
