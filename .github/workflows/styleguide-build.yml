@@ -3,8 +3,10 @@ on:
   push:
     branches:
       - develop
+
 jobs:
   build-and-deploy-styleguide:
+    if: ${{ false }}
     runs-on: ubuntu-20.04
     steps:
       - name: checkout code

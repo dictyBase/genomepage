@@ -8,8 +8,10 @@ on:
   push:
     branches:
       - develop
+
 jobs:
   percy:
+    if: ${{ false }}
     runs-on: ubuntu-20.04
     steps:
       - name: set up node.js
