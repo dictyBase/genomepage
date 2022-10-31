@@ -5,8 +5,7 @@ import AddIcon from "@material-ui/icons/Add"
 import FileDownloadIcon from "@material-ui/icons/GetApp"
 import InfoIcon from "@material-ui/icons/Info"
 import { SvgIconProps } from "@material-ui/core/SvgIcon"
-import LogoutIcon from "@mui/icons-material/Logout"
-import LoginIcon from "@mui/icons-material/Login"
+import AccountCircle from "@material-ui/icons/AccountCircle"
 
 type LinkIconProps = {
   link: LinkProps
@@ -67,7 +66,7 @@ const headerItems = [
   },
   {
     url: "/login",
-    icon: <LoginIcon fontSize="large" />,
+    icon: <AccountCircle fontSize="large" />,
     text: "Login",
     isRouter: true,
   },
@@ -91,7 +90,7 @@ const loggedHeaderItems = [
   },
   {
     url: "/logout",
-    icon: <LogoutIcon fontSize="large" />,
+    icon: <AccountCircle fontSize="large" />,
     text: "Logout",
     isRouter: true,
   },

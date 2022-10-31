@@ -1,5 +1,5 @@
 import Grid from "@material-ui/core/Grid"
-import { Skeleton } from "@mui/material"
+import Skeleton from "@material-ui/lab/Skeleton"
 
 /**
  * Loader is the default loading skeleton component.

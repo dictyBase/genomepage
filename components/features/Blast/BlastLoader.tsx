@@ -1,5 +1,5 @@
-import { Skeleton } from "@mui/material"
 import Box from "@material-ui/core/Box"
+import Skeleton from "@material-ui/lab/Skeleton"
 
 /**
  * Loading screen for Blast page

@@ -2,7 +2,8 @@ import AppBar from "@material-ui/core/AppBar"
 import Tabs from "@material-ui/core/Tabs"
 import Tab from "@material-ui/core/Tab"
 import { createTheme, MuiThemeProvider } from "@material-ui/core/styles"
-import { Box, Skeleton } from "@mui/material"
+import Box from "@material-ui/core/Box"
+import Skeleton from "@material-ui/lab/Skeleton"
 
 const skeletonTheme = createTheme({
   overrides: {

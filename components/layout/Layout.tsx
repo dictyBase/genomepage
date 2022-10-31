@@ -3,8 +3,16 @@ import { useRouter } from "next/router"
 import Link from "next/link"
 import Tabs from "@material-ui/core/Tabs"
 import Tab from "@material-ui/core/Tab"
-import { Typography, Grid, AppBar, Box } from "@mui/material"
+import { Grid, AppBar, Box, Typography } from "@material-ui/core/"
 import Head from "next/head"
+import makeStyles from "@material-ui/styles/makeStyles"
+
+const useStyles = makeStyles({
+  title: {
+    fontSize: "24px",
+    textAlign: "center",
+  },
+})
 
 const getTabValue = (pathname: string) => {
   const subroute = pathname.split("/").splice(-1).join()
@@ -37,6 +45,7 @@ type Props = {
 }
 
 const Layout = ({ children, gene, title, description }: Props) => {
+  const classes = useStyles()
   const router = useRouter()
   const [tabValue, setTabValue] = React.useState(getTabValue(router.pathname))
 
@@ -52,7 +61,7 @@ const Layout = ({ children, gene, title, description }: Props) => {
           <meta name="description" content={`${description} at dictyBase`} />
         </Head>
         <Box pt="20px" pb="20px">
-          <Typography textAlign="center" variant="h1" fontSize="24px">
+          <Typography className={classes.title} variant="h1">
             {title}
           </Typography>
         </Box>
