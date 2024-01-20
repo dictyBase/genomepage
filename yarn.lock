@@ -2500,12 +2500,7 @@ acorn@^6.4.1:
   resolved "https://registry.yarnpkg.com/acorn/-/acorn-6.4.2.tgz#35866fd710528e92de10cf06016498e47e39e1e6"
   integrity sha512-XtGIhXwF8YM8bJhGxG5kXgjkEuNGLTkoYqVE+KMR+aspr4KGYmKYg7yUe3KghyQ9yheNwLnjmzh/7+gfDBmHCQ==
 
-acorn@^8.1.0, acorn@^8.5.0, acorn@^8.8.0:
-  version "8.8.1"
-  resolved "https://registry.yarnpkg.com/acorn/-/acorn-8.8.1.tgz#0a3f9cbecc4ec3bea6f0a80b66ae8dd2da250b73"
-  integrity sha512-7zFpHzhnqYKrkYdUjF1HI1bzd0VygEGX8lFk4k5zVMqHEoES+P+7TKI+EvLO9WVMJ8eekdO0aDEK044xTXwPPA==
-
-acorn@^8.9.0:
+acorn@^8.1.0, acorn@^8.5.0, acorn@^8.8.0, acorn@^8.9.0:
   version "8.9.0"
   resolved "https://registry.yarnpkg.com/acorn/-/acorn-8.9.0.tgz#78a16e3b2bcc198c10822786fa6679e245db5b59"
   integrity sha512-jaVNAFBHNLXspO543WnNNPZFRtavh3skAkITqD0/2aeMkKZTN+254PyhwxFYrk3vQ1xfY+2wbesJMs/JC8/PwQ==
@@ -9816,10 +9811,10 @@ react-simple-code-editor@^0.13.1:
   resolved "https://registry.yarnpkg.com/react-simple-code-editor/-/react-simple-code-editor-0.13.1.tgz#4514553fa132dcaffec33a6612c58f1613c52416"
   integrity sha512-XYeVwRZwgyKtjNIYcAEgg2FaQcCZwhbarnkJIV20U2wkCU9q/CPFBo8nRXrK4GXUz3AvbqZFsZRrpUTkqqEYyQ==
 
-react-styleguidist@^13.1.1:
-  version "13.1.1"
-  resolved "https://registry.yarnpkg.com/react-styleguidist/-/react-styleguidist-13.1.1.tgz#cc5c6a3d0575616236aa48576e26e44707b09468"
-  integrity sha512-TUCBTB6+/eLrTKYCJ+7moW8nVKUNhE1Q+C8gJLDgb+z1Vuf3PydHR5uaIzVOnqItygNOI3NLGLgSuPT7MKLfsA==
+react-styleguidist@^13.1.2:
+  version "13.1.2"
+  resolved "https://registry.yarnpkg.com/react-styleguidist/-/react-styleguidist-13.1.2.tgz#2c1eccba44e462b3a527616dfa37717315ab099f"
+  integrity sha512-5Tl2nqDUkbpwffF/3Gu/75ROOaUEtwiBGW5mWvBoHRTH9M0Q4JK7T384hjsoZFvA6Xw4tYylsdWJDMx2ngSabw==
   dependencies:
     "@tippyjs/react" "4.1.0"
     "@types/react-test-renderer" "^18.0.0"
