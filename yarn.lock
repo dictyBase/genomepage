@@ -6626,10 +6626,10 @@ isobject@^3.0.1:
   resolved "https://registry.yarnpkg.com/isobject/-/isobject-3.0.1.tgz#4e431e92b11a9731636aa1f9c8d1ccbcfdab78df"
   integrity sha512-WhB9zCku7EGTj/HQQRz5aUQEUeoQZH2bWcltRErOpymJ4boYE6wL9Tbr23krRPSZ+C5zqNSrSw+Cc7sZZ4b7vg==
 
-isomorphic-git@^1.25.10:
-  version "1.25.10"
-  resolved "https://registry.yarnpkg.com/isomorphic-git/-/isomorphic-git-1.25.10.tgz#59ff7af88773b126f2b273ef3c536c08308b6d36"
-  integrity sha512-IxGiaKBwAdcgBXwIcxJU6rHLk+NrzYaaPKXXQffcA0GW3IUrQXdUPDXDo+hkGVcYruuz/7JlGBiuaeTCgIgivQ==
+isomorphic-git@^1.26.3:
+  version "1.26.3"
+  resolved "https://registry.yarnpkg.com/isomorphic-git/-/isomorphic-git-1.26.3.tgz#4cc7860ec915729e1daed7b51be9371da5da1574"
+  integrity sha512-NVicJz3RvUhllSSZnCVtTOqWhxlMln5OD3mh00334wCYhiMDuMiYsNJqs3sCHL7oXiv1tP93jMaQTdN7DkPCOg==
   dependencies:
     async-lock "^1.4.1"
     clean-git-ref "^2.0.1"
