@@ -5480,10 +5480,10 @@ fp-ts-std@^0.15.1:
   resolved "https://registry.yarnpkg.com/fp-ts-std/-/fp-ts-std-0.15.1.tgz#2df610c5e048e565f601faf1834ab5ff5944dfb7"
   integrity sha512-JvWjUki14fxuse8QAFubdNi4g+o7qWq94n31sxlD8hobl8KbyfguK69yQZBkNQu+q+8b5yYxgyevs003w6sDNA==
 
-fp-ts@^2.16.6:
-  version "2.16.6"
-  resolved "https://registry.yarnpkg.com/fp-ts/-/fp-ts-2.16.6.tgz#9d63c5b2a06355d627ae94c37a5cffda5c455d24"
-  integrity sha512-v7w209VPj4L6pPn/ftFRJu31Oa8QagwcVw7BZmLCUWU4AQoc954rX9ogSIahDf67Pg+GjPbkW/Kn9XWnlWJG0g==
+fp-ts@^2.16.10:
+  version "2.16.10"
+  resolved "https://registry.yarnpkg.com/fp-ts/-/fp-ts-2.16.10.tgz#829b82a46571c2dc202bed38a9c2eeec603e38c4"
+  integrity sha512-vuROzbNVfCmUkZSUbnWSltR1sbheyQbTzug7LB/46fEa1c0EucLeBaCEUE0gF3ZGUGBt9lVUiziGOhhj6K1ORA==
 
 fresh@0.5.2:
   version "0.5.2"
