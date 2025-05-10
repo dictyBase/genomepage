@@ -744,10 +744,10 @@
   resolved "https://registry.yarnpkg.com/@isomorphic-git/idb-keyval/-/idb-keyval-3.3.2.tgz#c0509a6c5987d8a62efb3e47f2815bcc5eda2489"
   integrity sha512-r8/AdpiS0/WJCNR/t/gsgL+M8NMVj/ek7s60uz3LmpCaTF2mEVlZJlB01ZzalgYzRLXwSPC92o+pdzjM7PN/pA==
 
-"@isomorphic-git/lightning-fs@^4.6.0":
-  version "4.6.0"
-  resolved "https://registry.yarnpkg.com/@isomorphic-git/lightning-fs/-/lightning-fs-4.6.0.tgz#a7f49784c121241a50cefba6198cff8d6e86eb20"
-  integrity sha512-tfon8f1h6LawjFI/d8lZPWRPTxmdvyTMbkT/j5yo6dB0hALhKw5D9JsdCcUu/D1pAcMMiU7GZFDsDGqylerr7g==
+"@isomorphic-git/lightning-fs@^4.6.2":
+  version "4.6.2"
+  resolved "https://registry.yarnpkg.com/@isomorphic-git/lightning-fs/-/lightning-fs-4.6.2.tgz#3071b63ac564f65ef67726743567448c23a9a16e"
+  integrity sha512-RS/oa1UBnoUFe56bsjOEgoUUReYKQzYUlQnbERRRNv9s9KmjyWuuylPV+YgsWirR2oONKaipWYMebVQ8SAe55Q==
   dependencies:
     "@isomorphic-git/idb-keyval" "3.3.2"
     isomorphic-textencoder "1.0.1"
